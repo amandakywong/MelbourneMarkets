@@ -1,8 +1,27 @@
-.typefilter {
-    filter: grayscale(100%);
+.typefilterbutton {
+    position: absolute;
+    border-radius: 9999px;
+    cursor: pointer;
+    padding: .5rem 3rem;
+    margin: 1rem;
+    background-color:#1F2937;
+    width: 87%;
+
+  }
+  .buttoncontainer {
+    display: flex; 
+    position: relative; 
+    flex-direction: row; 
+    align-items: center; 
+    border-radius: 9999px; 
+
+  }
+  .buttonimg{
+    width: 50%;
   }
   .active {
       filter: none;
+      border: #F3F4F6 solid .5rem;
     }
   .areafilter.active {
     background-color: white;
