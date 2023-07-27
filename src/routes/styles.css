@@ -1,123 +1,131 @@
 .typefilterbutton {
-    position: absolute;
-    border-radius: 9999px;
-    cursor: pointer;
-    padding: .5rem 3rem;
-    margin: 1rem;
-    background-color:#1F2937;
-    width: 87%;
+  border-radius: 9999px;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  white-space: nowrap;
+  background-color: #1f2937;
+  text-align: center;
+ 
+}
+.buttoncontainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 9999px;
 
-  }
-  .buttoncontainer {
-    display: flex; 
-    position: relative; 
-    flex-direction: row; 
-    align-items: center; 
-    border-radius: 9999px; 
+}
+.buttonimgcontainer{
+  width: 4rem;
+  height: auto;
+  padding-bottom: 5.5rem;
+}
+.buttonimg {
+  width: 100%;
+}
 
-  }
-  .buttonimg{
-    width: 50%;
-  }
-  .active {
-      filter: none;
-      border: #F3F4F6 solid .5rem;
-    }
-  .areafilter.active {
-    background-color: white;
-  }
-  #cardsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 2rem;
-    background-color: #F3F4F6;
-    
-  
-    @media screen and (min-width: 640px) { 
+.active {
+  background-color: darkgray;
+  border: #f3f4f6 solid 4px;
+}
+.areafilterbutton {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 9999px;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: #000000;
+}
+.areafilterbutton:hover,
+.areafilterbutton.active {
+  background-color: white;
+}
+#cardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #f3f4f6;
+}
+  @media screen and (min-width: 640px) {
     /*card shell contains the href to details page and contains all card children including card*/
-      .card-shell {
-         flex: 0 1 calc(100% - 1em);
-      }
-     };
-    @media (min-width: 768px) { 
-      .card-shell{
-        flex: 0 1 calc(50% - 1em);
-      }
-     };
-    @media (min-width: 1190px) { 
-      .card-shell{
-        flex: 0 1 calc(25% - 1em);
-      }
-     };
-    @media (min-width: 1980px) { 
-      .card-shell{
-        flex: 0 1 calc(14% - 1em);
-      }
-     }; 
+    .card-shell {
+      flex: 0 1 calc(100% - 1em);
+    }
   }
+  @media (min-width: 768px) {
+    .card-shell {
+      flex: 0 1 calc(50% - 1em);
+    }
   
-  .card {
-      margin: 1rem 0;
-      padding-bottom: 1.5rem;
-      flex: 1;
-      border-radius: 0.25rem; 
-      background-color: #1F2937; 
-      transition-duration: 300ms; 
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-      cursor: pointer;
-      
   }
+  @media (min-width: 1190px) {
+    .card-shell {
+      flex: 0 1 calc(25% - 1em);
+    }
+    .typefilterbutton{
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+  @media (min-width: 1980px) {
+    .card-shell {
+      flex: 0 1 calc(14% - 1em);
+    }
   
-  .card:hover{
-      transform: translateY(-0.6rem); 
   }
-  
-  .image-container img {
-      object-fit: cover; 
-      border-top-left-radius: 0.25rem;
-      border-top-right-radius: 0.25rem; 
-      width: 100%; 
-      height: 18rem; 
-  }
-  
-  .container h5 {
-      color: antiquewhite;
-      margin: .5rem 1.5rem; 
-      font-size: 1.125rem;
-      line-height: 1.75rem; 
-      font-weight: 700; 
-  }
-  .container h6 {
-      margin: .5rem 1.5rem;
 
-      font-size: 0.85rem;
-      line-height: 1.5rem;
-      color: #9fa7b8; 
-  }
-  .hide {
-      display: none;
-    }
-  
-    @media (max-width: 767px) {
-      .leading-loose {
-        background-color: #e1eaff; /* Specify the desired background color */
-        width: 100%;
-      }
-    }
-    #maps {
-      height: 28rem;
-      width: 100%;
-    }
-    
-  
-    /* The image inside the container */
-  
-    
-    
-  
-    /*COLOUR PALETTE
+
+.card {
+  margin: 1rem 0;
+  padding-bottom: 1.5rem;
+  flex: 1;
+  border-radius: 0.25rem;
+  background-color: #1f2937;
+  transition-duration: 300ms;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-0.6rem);
+}
+
+.image-container img {
+  object-fit: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  width: 100%;
+  height: 18rem;
+}
+
+.container h5 {
+  color: antiquewhite;
+  margin: 0.5rem 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+.container h6 {
+  margin: 0.5rem 1.5rem;
+
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  color: #9fa7b8;
+}
+
+#maps {
+  height: 28rem;
+  width: 100%;
+}
+
+/* The image inside the container */
+
+/*COLOUR PALETTE
     grey: ECECF4 (background)
     pinK: FF87A2
     orange: FE5E33

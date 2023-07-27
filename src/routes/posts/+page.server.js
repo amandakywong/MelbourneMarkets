@@ -3,7 +3,6 @@ const {Pool} = pkg;
 import express from "express";
 import cors from 'cors'
 const app = express();
-import { db } from '../../stores.js';
 
 const pool = new Pool({
     host: "localhost",
@@ -12,15 +11,12 @@ const pool = new Pool({
     database: "marketdb"
 })
 
-//middleware
-app.use(cors());
-//     //gets us access for reqest.body
-app.use(express.json());
+// //middleware
+// app.use(cors());
+// //     //gets us access for reqest.body
+// app.use(express.json());
 
-//get all posts
-// pool.connect();
 
-/** @type {import('./$types').PageLoad} */
 export async function load() {
       const client = await pool.connect();
       try {
