@@ -8,7 +8,7 @@
  
 }
 .buttoncontainer {
-  display: flex;
+  width: 3rem;
   position: relative;
   flex-direction: row;
   align-items: center;
@@ -23,7 +23,10 @@
 .buttonimg {
   width: 100%;
 }
-
+.shortimage {
+  padding-top: 28px;
+  padding-bottom: 4px;
+}
 .active {
   background-color: darkgray;
   border: #f3f4f6 solid 4px;

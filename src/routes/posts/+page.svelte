@@ -128,7 +128,7 @@
     >
       <span class="buttonimgcontainer">
         <img
-          class="buttonimg"
+          class="buttonimg py-1"
           alt="Arts and craft button"
           src="artsandcrafticon.png"
         />
@@ -142,7 +142,7 @@
     >
       <span class="buttonimgcontainer">
         <img
-          class="buttonimg"
+          class="buttonimg py-1"
           alt="fresh produce button"
           src="freshproduceicon.png"
         />
@@ -156,7 +156,7 @@
     >
       <span class="buttonimgcontainer">
         <img
-          class="buttonimg"
+          class="buttonimg shortimage"
           alt="Bric-a-brac button"
           src="bricabracicon.png"
         />
@@ -170,7 +170,7 @@
     >
       <span class="buttonimgcontainer">
         <img
-          class="buttonimg"
+          class="buttonimg shortimage"
           alt="Farmers market button"
           src="farmersicon.png"
         />
