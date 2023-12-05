@@ -1,38 +1,25 @@
-# create-svelte
+# Name
+Melbourne Markets
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Description
+Personal project work in progress created for the purpose of finding and filtering information about markets around Melbourne.
 
-## Creating a project
+#Reflection
+This is my first project using a framework over vanillaJS, CSS frameworks and databases. Sveltekit was easy to use and great to help keep my code neat and maintainable. It was a rewarding challenge that taught me how to utilise components, routes, databases and API integration. I also was able to practice my front end skills in creating responsive, accessible and clean UI. 
 
-If you're seeing this, you've probably already done this step. Congrats!
+# Need help
+The biggest challenge is figuring out how to store information so that on the details page refresh, will reload the previously viewed market. Have attempted to use stores.js and localStorage with little progress.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+#Technology
+* Sveltekit frontend framework
+* CSS tailwind
+* Postgres database
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+#Features
+* Display responsive cards for each market
+* Multiple filters based on market type, location, (date filter yet to build)
+* Details page of each market includes
+*   image carousel
+*   description and details of market
+*   interactive google map location using API integration
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
