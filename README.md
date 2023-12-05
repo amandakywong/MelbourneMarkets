@@ -23,5 +23,6 @@ The biggest challenge is figuring out how to store information so that on the de
 *   description and details of market
 *   interactive google map location using API integration
 
-![homepage](https://postimg.cc/4K0Sp1TL)
+![marketscards](https://github.com/amandakywong/MelbourneMarkets/assets/132867123/6596a99c-4ab2-4685-b88f-45026731ecb5)
+
 
